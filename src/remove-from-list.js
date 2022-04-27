@@ -26,7 +26,7 @@ function removeKFromList(l, k) {
   l = newL;
 
   while (l) {
-    if (l.next && l.next.value === k) {
+    while (l.next && l.next.value === k) {
       l.next = l.next.next;
     }
 
